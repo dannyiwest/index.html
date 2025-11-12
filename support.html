@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activecncus.com Support - Payment Processing</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font and basic styling */
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f7f9fc; /* Light background */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e3a8a', /* Deep Indigo/Blue */
+                        'light-blue': '#eff6ff',
+                        'accent-blue': '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="p-4 sm:p-8">
+    <div class="max-w-4xl mx-auto">
+
+        <!-- Header Card -->
+        <header class="bg-primary-blue text-white p-6 rounded-t-xl shadow-lg">
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                ⚙️ activecncus.com Support
+            </h1>
+            <p class="mt-2 text-indigo-200 text-lg">
+                Payment Processing Issues (Venmo, PayPal, Braintree)
+            </p>
+        </header>
+
+        <!-- Main Content Card -->
+        <main class="bg-white p-6 sm:p-8 rounded-b-xl shadow-xl space-y-8">
+            <p class="text-gray-700 text-lg border-b pb-4 border-gray-100">
+                If you are experiencing issues with completing your order, please review the common solutions below for our supported payment methods.
+            </p>
+
+            <!-- Venmo & PayPal Section -->
+            <section class="p-4 border-l-4 border-accent-blue bg-light-blue rounded-lg">
+                <h2 class="text-2xl font-semibold text-primary-blue mb-4 flex items-center">
+                    <span class="mr-3 text-3xl">💳</span> Venmo & PayPal Payment Issues
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    These platforms often have strict security and verification processes. If your payment is not going through, consider the following:
+                </p>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>
+                        <strong>Linked Bank/Card:</strong> Ensure the bank account or credit card linked to your Venmo or PayPal account is <strong class="text-red-600">current and has sufficient funds</strong>.
+                    </li>
+                    <li>
+                        <strong>Account Verification:</strong> Confirm your Venmo or PayPal account is fully verified and not subject to any temporary **spending limits or holds**.
+                    </li>
+                    <li>
+                        <strong>Browser Cache:</strong> Try **clearing your browser's cache and cookies**, or use an incognito/private browsing window, then attempt the payment again.
+                    </li>
+                    <li>
+                        <strong>Address Mismatch:</strong> Verify that the shipping address on our site matches the address associated with your PayPal account (if applicable).
+                    </li>
+                    <li>
+                        <strong>Note:</strong> Sometimes, large transactions may be flagged by PayPal/Venmo security. Check your email or app for a **pending authorization request**.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Braintree Section -->
+            <section class="p-4 border-l-4 border-indigo-400 bg-indigo-50 rounded-lg">
+                <h2 class="text-2xl font-semibold text-primary-blue mb-4 flex items-center">
+                    <span class="mr-3 text-3xl">🔐</span> Braintree (Credit Card) Processing Issues
+                </h2>
+                <p class="text-gray-700 mb-4">
+                    Braintree handles our direct credit/debit card transactions. If your card is declined, it is usually one of these reasons:
+                </p>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>
+                        <strong>Billing Address:</strong> Double-check that the <strong class="text-red-600">billing address and zip code</strong> you entered on our checkout page exactly match the address on file with your credit card company. This is the most common issue.
+                    </li>
+                    <li>
+                        <strong>Card Details:</strong> Ensure the **card number, expiration date, and CVV code** (the 3 or 4-digit security code) are entered correctly.
+                    </li>
+                    <li>
+                        <strong>Card Type/Issuer:</strong> Confirm your card type (Visa, Mastercard, etc.) is supported and that your bank has not placed a **temporary hold or block** on the transaction.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- General Advice Section -->
+            <section class="pt-4 border-t border-gray-200">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <span class="mr-3 text-3xl">✅</span> General Troubleshooting Steps
+                </h2>
+                <ul class="list-disc ml-6 space-y-3 text-gray-700">
+                    <li>Try a **different payment method** if available.</li>
+                    <li>Attempt the transaction using a **different device** (e.g., from a mobile phone instead of a desktop).</li>
+                    <li>If the error persists after 30 minutes, it may be a temporary system issue. Please **wait a short time and try again**.</li>
+                </ul>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="contact-info bg-gray-100 p-6 rounded-xl border border-gray-200 mt-8">
+                <h3 class="text-2xl font-bold text-primary-blue mb-3">Need More Help?</h3>
+                <p class="text-gray-700 mb-4">
+                    If you have followed these steps and are still unable to process your payment, please contact our support team with your order number (if applicable) and a screenshot of the error message.
+                </p>
+                <div class="space-y-2 text-lg">
+                    <p>
+                        <strong class="font-medium text-gray-800">Email us at:</strong> 
+                        <a href="mailto:support@activecncus.com" class="text-accent-blue hover:text-primary-blue font-semibold transition duration-150">support@activecncus.com</a>
+                    </p>
+                    <p>
+                        <strong class="font-medium text-gray-800">Or call us at:</strong> 
+                        <a href="tel:8585787881" class="text-accent-blue hover:text-primary-blue font-semibold transition duration-150">(858) 578-7881</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
